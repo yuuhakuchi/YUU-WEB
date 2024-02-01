@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+/* 咒語 - 消除所有預設 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family:
+		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+		"PingFang TC", "Heiti TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+}
+
+
+
+:root {
+	--light_grey: #ccc;
+	--grey: #999;
+	--deep_grey: #444;
+	--major-color: #f2edf0;
+	--major-color2: #e6ece5;
+	--major-color3: #ecf0f4;
+	--lesser-color1: #bf9899;
+}
+
+
+a {
+	display: block;
+	color: var(--deep_grey);
+	text-decoration: none;
+}
+
+/* 咒語 - 消除所有預設 */
+
+body{
+    font-family: 'Julius Sans One', sans-serif; /* 指定主要的字體系列，替換 'Your Chosen Font' 為您想要使用的字體名稱 */
+    background-color: #232D25;
+}
+
+/* 頁首 */ 
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Logo */
+
+h1{
+    position: relative;
+    left: 60px;
+    top: 17px;
+}
+
+h1 img{
+    width: 110%;
+}
+
+/* 綴線 */
+.decorate_out{
+    border: 2px solid #f0f0f050;
+    height: 40%;
+    border-radius: 60px;
+    padding: 6px 7px 6px 7px;
+    margin: 17px 60px 35px 0px;
+}
+
+.decorate{
+    border: 1px solid #d9d9d920 ;
+    height: 40%;
+    border-radius: 50px;
+    padding: 12px 34px 12px 34px;
+}
+
+/* Nav */
+
+ul{
+    display: flex;
+    flex-direction: row;
+    opacity: 100%;
+}
+
+ul p{
+    color: #f0f0f0;
+    padding: 12px 20px;
+}
+
+/* Banner */
+
+.Banner{
+    width: 100%;
+}
+
+.Banner img{
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+
+}
+
+.Banner h2{
+    font-size: 64px;
+    color:white;
+    padding: 35px 0px 18px 75px;
+    letter-spacing: 5px;  /* 調整字距，可以根據需要進行調整 */
+    line-height: 1.6;       /* 調整行距，可以根據需要進行調整 */
+}
+
+.Banner h3{
+    font-size: 30px;
+    color:white;
+    padding: 0px 0px 60px 75px;
+    letter-spacing: 10px;  /* 調整字距，可以根據需要進行調整 */
+    line-height: 1.5;      /* 調整行距，可以根據需要進行調整 */
+}
+
+/* 消除按鈕預設 */
+button,
+button:focus,
+button:active {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+
+.Banner .start{
+    background-color: #80A087;
+    border-radius: 16px;
+    font-size: 16px;
+    color:white;
+    padding: 14px 20px ;
+    margin: 0px 0px 0px 75px;
+}
+
+/* Works */
+
+.Works{
+    position: relative;
+    margin-top: 40vh;
+}
+
+.Works h2{
+    display: flex;
+    justify-content: center;
+    font-size: 64px;
+    color:white;
+    letter-spacing: 5px;  /* 調整字距，可以根據需要進行調整 */
+    line-height: 1.6;       /* 調整行距，可以根據需要進行調整 */
+}
+
+.Works_0{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+}
+
+.Work_1{
+    width: 15%;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: 0px 50%;
+    margin: 3vw 5vw ;
+}
+
+.Work_2{
+    width: 15%;
+    margin: 0vw 5vw 5vw;
+}
+
+.Work_20{
+    z-index: 9;
+    position: absolute;
+    width: 15%;
+    margin: 0vw 5vw 5vw 55vw;
+}
+
+
+/* footer */
+
+.footer_photo{
+    position: absolute;
+    height: 15%;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -3;
+}
+
+.footer_contain{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_logo {
+    margin: 0.5rem 16rem 0 10rem; /* 調整 margin，不要導致容器過寬 */
+  }
+  
+  footer p {
+    color: #fff;
+    font-size: 1rem;
+    padding: 6rem 0 0 32rem; /* 使用相對值，避免影響到容器寬度 */
+  }
